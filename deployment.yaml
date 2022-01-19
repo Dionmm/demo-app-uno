@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: app-uno
+  name: app-uno
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: app-uno
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: app-uno
+    spec:
+      containers:
+      - image: hello-world
+        name: hello-world
+        resources: {}
+status: {}
