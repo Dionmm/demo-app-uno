@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
 - ../base
 patchesStrategicMerge:
-- service_ports.yaml
-- deployment_image.yaml
-- deployment_replicas.yaml
+- service-ports.yaml
+- deployment-image.yaml
+- deployment-replicas.yaml
